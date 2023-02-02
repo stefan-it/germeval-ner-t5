@@ -1,6 +1,7 @@
 # Evaluating German T5 Models on GermEval 2014 (NER)
 
-This repository presents an **on-going** evaluation of German T5 models on the GermEval 2014 NER downstream task.
+This repository presents an **on-going** evaluation of [German T5 models](https://huggingface.co/GermanT5)
+on the [GermEval 2014](https://sites.google.com/site/germeval2014ner/data) NER downstream task.
 
 # Changelog
 
