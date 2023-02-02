@@ -37,3 +37,15 @@ Score in brackets indicates result on development split.
 
 For hyper-parameter search, the script `flair-fine-tuner.py` is used in combination with a configuration file (passed as argument).
 All configuration files are located under `./configs` that were used for the experiments here.
+
+## Baselines:
+
+* [Fine-tuned DistilBERT](https://huggingface.co/dbmdz/flair-distilbert-ner-germeval14) models reports (86.84) / 85.62.
+* [GELECTRA Base](https://aclanthology.org/2020.coling-main.598/) reports 86.02.
+* Current SOTA is [GELECTRA Large](https://aclanthology.org/2020.coling-main.598/) with 88.95 on test set.
+
+# Hardware/Requirements
+
+Latest Flair version (commit [6da65a4](https://github.com/flairNLP/flair/tree/6da65a4f665bb333f639067bc5f868046880e63b)) is used for experiments.
+
+All models are fine-tuned on A10 (24GB) instances from [Lambda Cloud](https://lambdalabs.com/service/gpu-cloud).
