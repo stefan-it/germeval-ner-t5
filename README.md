@@ -2,6 +2,10 @@
 
 This repository presents an **on-going** evaluation of German T5 models on the GermEval 2014 NER downstream task.
 
+# Changelog
+
+* 03.02.2023: Initial version.
+
 # Fine-Tuning T5
 
 A few approaches exist for fine-tuning T5 models for token classification tasks:
