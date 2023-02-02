@@ -42,7 +42,7 @@ All configuration files are located under `./configs` that were used for the exp
 ## Baselines:
 
 * [Fine-tuned DistilBERT](https://huggingface.co/dbmdz/flair-distilbert-ner-germeval14) models reports (86.84) / 85.62.
-* [GELECTRA Base](https://aclanthology.org/2020.coling-main.598/) reports 86.02.
+* [GELECTRA Base](https://aclanthology.org/2020.coling-main.598/) reports 86.02 on test set.
 * Current SOTA is [GELECTRA Large](https://aclanthology.org/2020.coling-main.598/) with 88.95 on test set.
 
 # Hardware/Requirements
