@@ -35,14 +35,14 @@ for log_dir in log_dirs:
             line = line.rstrip()
 
             if "f1-score (micro avg)" in line:
-                dev_result = line.split(" ")[-1]
+                dev_result = float(line.split(" ")[-1])
                 all_dev_results.append(dev_result)
             
             if "F-score (micro" in line:
-                test_result = line.split(" ")[-1]
+                test_result = float(line.split(" ")[-1])
                 test_results[result_identifier].append(test_result)
 
-        best_dev_result = max([float(value) for value in all_dev_results])
+        best_dev_result = max(all_dev_results)
         dev_results[result_identifier].append(best_dev_result)
                 
 mean_dev_results = {}
@@ -52,7 +52,7 @@ print("Debug:", dev_results)
 for dev_result in dev_results.items():
     result_identifier, results = dev_result
     
-    mean_result = np.mean( [float(value) for value in results])
+    mean_result = np.mean(results)
     
     mean_dev_results[result_identifier] = mean_result
 
